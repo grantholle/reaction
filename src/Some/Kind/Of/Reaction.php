@@ -17,7 +17,7 @@ class Reaction
   /**
    * Generates a reaction based on a type of reaction
    *
-   * @param  string  $type   The type of reaction: positive, bad, cautious
+   * @param  string  $type   The type of reaction: positive, bad, unsafe
    * @param  boolean $strong Wrap the reaction in <strong/>
    * @return string/$this    Either return the reaction if its provided, or $this to chain
    */
@@ -33,11 +33,11 @@ class Reaction
   }
 
   /**
-   * Generates a cautious reaction
+   * Generates a unsafe reaction
    *
    * @return string
    */
-  public function cautious()
+  public function unsafe()
   {
     return $this->speak(collect([
       'careful',
