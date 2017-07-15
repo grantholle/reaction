@@ -7,7 +7,7 @@ if (!function_exists('reaction')) {
    * random short reaction to a type of event
    *
    * @param  string $type The type of event: 'positive', 'bad', 'cautious'
-   * @return [type]       [description]
+   * @return string/Reaction
    */
   function react($type = null, $strong = true)
   {
