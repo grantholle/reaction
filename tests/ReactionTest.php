@@ -42,7 +42,7 @@ class ReactionTest extends \PHPUnit_Framework_TestCase
   /** @test */
   public function test_reaction_contains_exclamation_point()
   {
-    $r = $this->reaction->getReaction('cautious', false);
+    $r = $this->reaction->getReaction('unsafe', false);
 
     $this->assertContains('!', $r);
   }
